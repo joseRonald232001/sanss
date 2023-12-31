@@ -591,7 +591,7 @@ const Notas = () => {
       mdt: "",
       eg: "",
       nf: "73",
-      rg: "ABA",
+      rg: "APR",
     },
     {
       color: "1",
@@ -616,7 +616,7 @@ const Notas = () => {
       mdt: "",
       eg: "",
       nf: "83",
-      rg: "ABA",
+      rg: "APR",
     },
     {
       color: "0",
