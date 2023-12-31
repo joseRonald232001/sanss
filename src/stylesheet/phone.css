@@ -5,3 +5,7 @@
   --colorBlue: #215f88;
 }
 
+.fo{
+  width:100%;
+  object-fit:contain;
+}

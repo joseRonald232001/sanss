@@ -7,9 +7,9 @@ const Footer = () => {
     < footer>
       <section className="containerFooter">
         <div>
-            <img src={footer1} alt="img" />
+            <img className="fo" src={footer1} alt="img" />
         </div>
-        <div> <img src={footer2} alt="img" /></div>
+        <div>   <img  className="fo" src={footer2} alt="img" /></div>
       </section>
     </footer>
   );
