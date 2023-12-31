@@ -1,6 +1,6 @@
 import React from "react";
 import UniversityIcon from "../icons/UniversityIcon";
-import arrHome from "../pictures/arrHome.png";
+import arrHome from '../pictures/arrHome.png'
 import avisoof from "../pictures/avisoof.png";
 const AccorHome = () => {
   const link = [
@@ -15,7 +15,7 @@ const AccorHome = () => {
   return (
     <div>
       <button className="linkHome">
-        <img className="flech" src={arrHome} alt="" />
+        <img className="flech" src={arrHome} alt="img" />
         <UniversityIcon /> Avisos
       </button>
       <div className="aviss">
