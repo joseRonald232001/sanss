@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Tower from "../icons/tower";
+import Towerr from '../icons/Towerr'
 import UserCircleIcon from "../icons/UserCircleIcon";
 import bur from "../pictures/bur.png";
 
@@ -42,7 +42,7 @@ const Navbar = () => {
           </nav>
 
           <div className={isOpen ? "clickIcons" : "clickIcons2"}>
-            <Tower />
+            <Towerr />
             <UserCircleIcon />
           </div>
         </div>

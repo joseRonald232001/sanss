@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tower = () => {
+const Towerr = () => {
   return (
     <>
       <div className="icon">
@@ -25,4 +25,4 @@ const Tower = () => {
   );
 };
 
-export default Tower;
+export default Towerr;
