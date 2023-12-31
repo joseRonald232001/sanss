@@ -637,11 +637,14 @@ margin-bottom: 4px;
 }
 
 .tableTitle{
+  width: 100%;
+  max-width: 1700px;
+  min-width: 1700px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   display: grid ;
-  grid-template-columns: repeat(auto-fill, minmax(71px, 1fr)); /* Modificación aquí */
+  grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); /* Modificación aquí */
   justify-content: space-between;
   background: #E8ECEF;
 }
