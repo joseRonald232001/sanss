@@ -36,6 +36,9 @@ header {
   width: 35px;
 }
 
+.navPrinc{
+  border: none !important;
+}
 .navHidden {
   display: none;
 }
@@ -459,7 +462,6 @@ footer {
 .lineKar {
   padding: 0 10px;
   width: 100%;
-  min-width:1900px;
   height: 30px;
   display: flex;
   justify-content: space-between;
@@ -487,7 +489,6 @@ footer {
 }
 .nameK {
   width: 100%;
-  min-width:1900px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -638,8 +639,6 @@ margin-bottom: 4px;
 
 .tableTitle{
   width: 100%;
-  max-width: 1700px;
-  min-width: 1700px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -647,6 +646,11 @@ margin-bottom: 4px;
   grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); /* Modificación aquí */
   justify-content: space-between;
   background: #E8ECEF;
+}
+
+.navPrinc{
+  width:100% ;
+  border: 1px solid red;
 }
 .notB{
   display: inline;
@@ -671,7 +675,8 @@ margin-bottom: 4px;
 }
 
 .tabla{
-min-width: 1900px;
+ width: 100%;
+ min-width: min-content;
 }
 .inputg{
   border:1px solid rgb(203, 200, 200) ;
