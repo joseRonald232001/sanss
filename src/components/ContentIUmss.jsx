@@ -1,5 +1,5 @@
 import React from "react";
-import AccorHome from "./accorHome";
+import AccorHome from "./AccorHomes";
 
 const ContentIUmss = () => {
   return (

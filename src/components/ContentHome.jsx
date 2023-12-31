@@ -1,5 +1,6 @@
 import React from "react";
-import AccorHome from '../components/AccorHome.jsx'
+import AccorHomes from "./AccorHomes";
+
 
 const ContentHome = () => {
   return (
@@ -50,7 +51,7 @@ const ContentHome = () => {
       </section>
 
       <section className="accordionHome">
-         <AccorHome/>
+        <AccorHomes/>
       </section>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import UniversityIcon from "../icons/UniversityIcon";
 import arrHome from '../pictures/arrHome.png'
 import avisoof from "../pictures/avisoof.png";
-const AccorHome = () => {
+const AccorHomes = () => {
   const link = [
     { icon: <UniversityIcon />, name: "Enlaces Unidades UMSS" },
     { icon: <UniversityIcon />, name: "Servicios en-linea UMSS" },
@@ -33,4 +33,4 @@ const AccorHome = () => {
   );
 };
 
-export default AccorHome;
+export default AccorHomes;
