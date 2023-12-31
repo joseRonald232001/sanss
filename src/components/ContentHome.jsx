@@ -1,5 +1,5 @@
 import React from "react";
-import AccorHome from '../components/AccorHome'
+import AccorHome from '../components/AccorHome.jsx'
 
 const ContentHome = () => {
   return (
