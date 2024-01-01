@@ -643,7 +643,7 @@ margin-bottom: 4px;
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   display: grid ;
-  grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); /* Modificación aquí */
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Modificación aquí */
   justify-content: space-between;
   background: #E8ECEF;
 }
@@ -675,9 +675,9 @@ margin-bottom: 4px;
 }
 
 .tabla{
- width: 100%;
- min-width: min-content;
+
 }
+
 .inputg{
   border:1px solid rgb(203, 200, 200) ;
   width:100%;
