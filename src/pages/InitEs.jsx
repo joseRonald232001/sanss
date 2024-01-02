@@ -46,10 +46,15 @@ const InitEs = () => {
         </div>{" "}
         SUMAYA ESTEFANIA IRAIZPS GARCIA
       </div>
+
+      
       <section className="inite">
+        <div>
         <img className="infop" src={infop} alt="" />
+
+        </div>
         
-        <section>
+        <section className="kkk">
         <img className="enl"  src={enla} alt="" />
         <div className="initima">
           <Link to={"/inscripcion"}>
@@ -64,7 +69,11 @@ const InitEs = () => {
         </div>
         </section>
 
+        <div>
+
         <img className="aviss2" src={avisoInfo} alt="" />
+        </div>
+
       </section>
       <br />
       <NavSecond color={"1"} />

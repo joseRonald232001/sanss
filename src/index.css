@@ -36,7 +36,7 @@ header {
   width: 35px;
 }
 
-.navPrinc{
+.navPrinc {
   border: none !important;
 }
 .navHidden {
@@ -207,7 +207,7 @@ footer {
   width: 100%;
 }
 .sectionPost {
-  padding:30px ;
+  padding: 30px;
   height: 350px;
   width: 100%;
 }
@@ -568,11 +568,9 @@ footer {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-
-.estuuu{
-  width:100%;
-  padding:0 20px;
-
+.estuuu {
+  width: 100%;
+  padding: 0 20px;
 }
 .inscript {
   display: flex;
@@ -588,77 +586,87 @@ footer {
   width: 700px;
   object-fit: contain;
 }
-.avissEs{
-display: flex;
-flex-direction: column;
-}
-.avissEs img{
-  width:700px;
-  object-fit: contain;
-  margin-bottom:2px ;
-}
-
-.imgest{
-height:140px ;
-}
-
-.inite{
-  padding:20px 5px;
+.avissEs {
   display: flex;
+  flex-direction: column;
+}
+.avissEs img {
+  width: 700px;
+  object-fit: contain;
+  margin-bottom: 2px;
+}
+
+.imgest {
+  height: 140px;
+}
+
+.inite {
+  padding: 20px 5px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 20px;
   justify-content: space-between;
 }
 
-.initima{
-display: flex;
-flex-direction: column;
+.initima {
+  display: flex;
+  flex-direction: column;
 }
 .initima img {
-  width:550px ;
-  object-fit:contain;
-margin-bottom: 4px;
+  width: 100%;
+  max-width:500px;
+  object-fit: contain;
+  margin-bottom: 4px;
 }
-.initima img:hover{
- cursor: pointer;
- filter: brightness(1) sepia(0.3) hue-rotate(10deg);}
-.infop{
-  width: min-content;
+.initima img:hover {
+  cursor: pointer;
+  filter: brightness(1) sepia(0.3) hue-rotate(10deg);
+}
+.infop {
+  width: 100%;
+  max-width: 500px;
   height: min-content;
   object-fit: contain;
 }
 
-.aviss2{
+.aviss2 {
+  max-width: 500px;
   object-fit: contain;
-  width: min-content;
+width: 100%;
   height: min-content;
 }
 
-.enl{
- width:550px ;
- object-fit: contain;
+.enl {
+  max-width: 500px;
+  object-fit: contain;
+  width: 100%;
 }
 
-.tableTitle{
+.tableTitle {
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  display: grid ;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Modificación aquí */
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(50px, 1fr)
+  ); /* Modificación aquí */
   justify-content: space-between;
-  background: #E8ECEF;
+  background: #e8ecef;
 }
 
-.navPrinc{
-  width:100% ;
+.navPrinc {
+  width: 100%;
   border: 1px solid red;
 }
-.notB{
+.notB {
   display: inline;
   font-weight: 500;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   text-align: center;
-  padding:10px ;
-  border:1px solid rgb(215, 214, 214) ;
+  padding: 10px;
+  border: 1px solid rgb(215, 214, 214);
 }
 .notB:nth-child(4) {
   grid-column: span 2;
@@ -670,64 +678,61 @@ margin-bottom: 4px;
   text-align: start;
 }
 
-.h{
-  font-weight:400 ;
+.h {
+  font-weight: 400;
 }
 
-.tabla{
-
+.tabla {
 }
 
-.inputg{
-  border:1px solid rgb(203, 200, 200) ;
-  width:100%;
-  padding:10px ;
+.inputg {
+  border: 1px solid rgb(203, 200, 200);
+  width: 100%;
+  padding: 10px;
   border-left: 5px solid #008000;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   outline: none;
 }
-.j{
-  padding:4px ;
+.j {
+  padding: 4px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.l{
+.l {
   background: #007bff;
   color: #fff;
   border: none;
   padding: 10px;
   outline: none;
-  border-radius:5px ;
+  border-radius: 5px;
 }
 
-.kk{
+.kk {
   margin: 0 auto;
-  width:350px ;
+  width: 350px;
   display: flex;
   flex-direction: column;
-
 }
 
-.m{
-  margin-bottom:2px;
+.m {
+  margin-bottom: 2px;
 }
-.m:hover{
+.m:hover {
   cursor: pointer;
   filter: brightness(1) sepia(0.1) hue-rotate(10deg);
 }
 
-.bb{
-  width:min-content;
+.bb {
+  width: min-content;
   margin: 20px auto !important;
 }
 
-.v:focus{
+.v:focus {
   background: #fffed8;
 }
 
-option{
-line-height: 1.5;
+option {
+  line-height: 1.5;
 }
-
