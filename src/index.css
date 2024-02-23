@@ -759,7 +759,6 @@ option {
 }
 .boxNotification {
   background: rgba(0, 0, 0, 0.3);
-  font-size: 3px;
   display: flex;
   font-weight: 600;
 }
