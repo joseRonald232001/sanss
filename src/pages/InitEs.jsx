@@ -3,16 +3,15 @@ import NavPrinc from "../components/NavPrinc";
 import { Link } from "react-router-dom";
 import NavSecond from "../components/NavSecond";
 import Footer from "../components/Footer";
-import infop from "../pictures/infop.png";
-import avisoInfo from "../pictures/avisoInfo.png";
-import info1 from "../pictures/info1.png";
-import info2 from "../pictures/info2.png";
-import info4 from "../pictures/info4.png";
-import info5 from "../pictures/info5.png";
-import infol from "../pictures/infol.png";
-import enla from '../pictures/enla.png'
-import pi from '../pictures/pi.png'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCirclePlay,
+  faSquareCheck,
+  faTriangleExclamation,
+} from "@fortawesome/free-solid-svg-icons";
+import UniversityIcon from "../icons/UniversityIcon";
+import arrHome from "../pictures/arrHome.png";
+import box from "../pictures/box.png";
 const InitEs = () => {
   const nav = [
     { name: "ESTUDIANTES", to: "/init" },
@@ -20,10 +19,47 @@ const InitEs = () => {
     { name: "Info.Academico" },
     { name: "Tramites" },
     { name: "Reg.Bio/Form/IDH" },
-    { name: "inscripcion" ,to:"/estudiantess" },
+    { name: "inscripcion", to: "/estudiantess" },
+  ];
+  const link = [
+    { icon: <UniversityIcon />, name: "Imformacion General" },
+    { icon: <UniversityIcon />, name: "Estado de cuenta" },
+    { icon: <UniversityIcon />, name: "Estado Admision" },
+    { icon: <UniversityIcon />, name: "Historia carreras" },
+    { icon: <UniversityIcon />, name: "Declaracion Jurada para el SSU" },
+    { icon: <UniversityIcon />, name: "Registro Biografico" },
+    { icon: <UniversityIcon />, name: "Notificaciones" },
   ];
 
-
+  const link2 = [
+    {
+      to: "/inscripcion",
+      descripcion:
+        "Permite ver el detalle de su inscripcion en el SIS en una determinada gestion.Adicionalmente puede ver los cursos Virtuales publicados por el Docente",
+      name: "Estado de inscripcion en el SIS",
+    },
+    {
+      to: "/notas",
+      descripcion: "Todas sus materias cursadas en la UMSS.",
+      name: "Kardex",
+    },
+    {
+      to: "",
+      descripcion: "Permite ver sus horarios de clase para la gestion actual.",
+      name: "Horario de Clases",
+    },
+    {
+      to: "",
+      descripcion: "Permite cambiar la contraseña de su cuenta webS  SISS.",
+      name: "Cambio de contraseña",
+    },
+    {
+      to: "",
+      descripcion:
+        "Permite obtener los 5 codigos de acceso para su inscripcion previa la admicino y compra de matricula",
+      name: "Obtencion de Cod. de acceso para inscripcion",
+    },
+  ];
 
   return (
     <>
@@ -47,33 +83,102 @@ const InitEs = () => {
         SUMAYA ESTEFANIA IRAIZPS GARCIA
       </div>
 
-      
-      <section className="inite">
-        <div>
-        <img className="infop" src={infop} alt="" />
+      <section className="boxInit">
+        <article className="box1">
+          <div className="boxInitInfo">Informacion Personal</div>
+          <div className="boxNotification">
+            <FontAwesomeIcon
+              icon={faTriangleExclamation}
+              style={{ color: "#139645", width: "20px", padding: "0 5px" }}
+              className="iconW"
+            />{" "}
+            Recuerde cerrar su cuenta para proteger su
+            <br /> Informacion
+          </div>
 
-        </div>
-        
-        <section className="kkk">
-        <img className="enl"  src={enla} alt="" />
-        <div className="initima">
-          <Link to={"/inscripcion"}>
-            <img src={pi} alt="img" />
-          </Link>
-             <Link to={'/notas'}>
-            <img src={info2} alt="img" />
-             </Link>
-            <img src={info4} alt="img" />
-            <img src={info5} alt="img" />
-            <img src={infol} alt="img" />
-        </div>
-        </section>
+          <div>
+            {link.map((noti) => (
+              <div className="listInit">
+                <img className="flech arrr" src={arrHome} alt="" />
+                <p></p> {noti.name}
+              </div>
+            ))}
+          </div>
+        </article>
 
-        <div>
+        <article className="box2">
+          <div className="box2noti">
+            <FontAwesomeIcon icon={faCirclePlay} style={{ color: "#ffffff" }} />
+            <span> Enlaces Rapidos </span>
+          </div>
 
-        <img className="aviss2" src={avisoInfo} alt="" />
-        </div>
+          <div className="link2">
+            {link2.map((noti) => (
+              <Link to={noti.to}  key={noti.name} style={{textDecoration:"none", color:"#000"}}>
+              <div className="link2box">
+                <img src={box} alt="" />
+                <div>
+                  <h3>{noti.name}</h3>
+                  <p>{noti.descripcion}</p>
+                </div>
+              </div>
+              </Link>
+            ))}
+          </div>
+        </article>
 
+        <article className="box3">
+          <div className="box3Noti">Avisos Importantes</div>
+
+          <div className="noti1">
+            <FontAwesomeIcon
+              icon={faSquareCheck}
+              style={{ color: "#215f87" }}
+            />
+            <span>SU CUENTA HA SIDO ACTIVADA </span>. Cambien regularmente la
+            contraseña de su cuenta webSISS
+          </div>
+
+          <div className="noti2">
+            <FontAwesomeIcon
+              icon={faTriangleExclamation}
+              style={{ color: "#215f87", width: "20px", padding: "0 5px" }}
+              className="iconW"
+            />
+            <span>Cursos Virtuales</span>
+            <p>
+              Ahora puede ver la Imformacion de los cursos virtuales de cada una
+              de sus materias en la opcion [estado de Inscripcion en el SISS].
+            </p>
+          </div>
+
+          <div className="noti3">
+            <FontAwesomeIcon
+              icon={faTriangleExclamation}
+              style={{ color: "#215f87", width: "20px", padding: "0 5px" }}
+              className="iconW"
+            />
+            <span>Aviso Importante</span>
+            <p>
+              La Imformacion de acceso (Codigo SIS ,Contraseña,fecha de
+              nacimiento) ala cuenta de Estudiante y los CODIGOS de ACCESO para
+              inscripcion es estrictamente privada,siendo responsabilidad del
+              Estudiante su seguridad
+              <span>
+                NO DEBE COMPARTIR,ENTREGAR,NI ENVIAR (REENVIAR EL CORREO DE SU
+                CONTRASEÑA Y TERCERAS PERSONAS)
+              </span>
+              ,TAMPOCO DEBE DE ENTREGAR FOTOCOPIA (NI ORIGINAL) DE SU MATRICULA
+              UNIVERSITARIA o CI-DOCUMENTO PERSONAL A CENTROS DE ESTUDIANTE, Su
+              seguridad es su responsabilidad y no de la institucion
+            </p>
+          </div>
+
+          <div className="box4">
+          <img className="flech arrr" src={arrHome} alt="" />
+          Enlaces Academicos Externos
+          </div>
+        </article>
       </section>
       <br />
       <NavSecond color={"1"} />
